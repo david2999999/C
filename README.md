@@ -1,18 +1,10 @@
+## C++
 
-     ,-----.,--.                  ,--. ,---.   ,--.,------.  ,------.
-    '  .--./|  | ,---. ,--.,--. ,-|  || o   \  |  ||  .-.  \ |  .---'
-    |  |    |  || .-. ||  ||  |' .-. |`..'  |  |  ||  |  \  :|  `--, 
-    '  '--'\|  |' '-' ''  ''  '\ `-' | .'  /   |  ||  '--'  /|  `---.
-     `-----'`--' `---'  `----'  `---'  `--'    `--'`-------' `------'
-    ----------------------------------------------------------------- 
+C++ is a general-purpose object-oriented programming (OOP) language, 
+developed by Bjarne Stroustrup, and is an extension of the C language.
+It is therefore possible to code C++ in a "C style" or "object-oriented style." 
+In certain scenarios, it can be coded in either way and is thus an effective example of a hybrid language.
 
-
-Hi there! Welcome to Cloud9 IDE!
-
-To get you started, create some files, play with the terminal,
-or visit http://docs.c9.io for our documentation.
-If you want, you can also go watch some training videos at
-http://www.youtube.com/user/c9ide.
-
-Happy coding!
-The Cloud9 IDE team
+C++ is considered to be an intermediate-level language, as it encapsulates both high-
+and low-level language features. Initially, the language was called "C with classes" as
+it had all the properties of the C language with an additional concept of "classes." However, it was renamed C++ in 1983.
