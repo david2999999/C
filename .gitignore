@@ -1,2 +1,3 @@
-CMakeLists
+CMakeLists.txt
 cmake-build-debug
+.idea

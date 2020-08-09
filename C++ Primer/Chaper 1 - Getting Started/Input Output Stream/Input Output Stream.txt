@@ -1,0 +1,16 @@
+Input/Output
+    - C++ includes an extensive standard library that provides IO.
+        - Fundamental to the iostream library has two types
+            - istream and ostream
+            - Which represents input and output streams
+    - A stream is a sequence of characters read from or written to an IO device
+        - The term stream is intended to suggest that the characters are generated,
+          or consumed, sequentially over time
+    - To handle input, we use an object of type istream named 'cin'
+        - This object is also referred to as the standard input
+    - To handle output, we use an ostream object named 'cout'
+        - This object is also referred to as the standard output
+        - There are also two other ostream objects
+            - cerr and clog
+                - 'cerr' is for standard error
+                - 'clog' is for general information about the execution of the program
