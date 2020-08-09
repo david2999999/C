@@ -25,3 +25,19 @@ Code
     - In general, #include directives must appear outside any function
         - Typically, we put the #include directives for a program at the beginning of the
           source file
+
+<< Operator
+    - The << operator takes two operands
+        - The left-hand operand must be an ostream object
+        - The right-hand operand is a value to print
+    - The operator writes the given value on the given ostream
+        - The result of the output operator is its left-hand operand
+            - That is, the result is the ostream on which we wrote the given value
+            - Then our output statement uses the << operator twice
+                - Because the operator returns its left-hand operand
+                - 'endl' is a special value called a manipulator
+                    - It has an effect of ending the current line and flushing the buffer
+                      associated with that device
+                    - Flushing the buffer ensures that all the output associated with
+                      the program has generated so far is actually written to the output stream,
+                      rather than sitting in memory waiting to be written
