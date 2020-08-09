@@ -14,3 +14,14 @@ Input/Output
             - cerr and clog
                 - 'cerr' is for standard error
                 - 'clog' is for general information about the execution of the program
+
+Code
+    - The first line of the program '#include <iostream>' tells the compiler that we want to
+      use the iostream library
+        - The name inside angle brackets refers to a header
+        - Every program that uses a library facility must include its associated header
+    - The #include directive must be written on a single line
+        - The name of the header and the #include must appear on the same line
+    - In general, #include directives must appear outside any function
+        - Typically, we put the #include directives for a program at the beginning of the
+          source file
