@@ -41,3 +41,12 @@ Code
                     - Flushing the buffer ensures that all the output associated with
                       the program has generated so far is actually written to the output stream,
                       rather than sitting in memory waiting to be written
+
+>> Operator
+    - The >> Operator behaves analogously to the output operator
+        - It takes an istream as its left-hand operand and an object as its right-hand operand
+        - It reads data from the given istream and stores what what read in the given object
+    - Like the output operator, the input operator returns its left-hand operand as its result
+        - (std::cin >> v1) >> v2;
+        - Because it return its left-hand operand, we can combine a sequence of input requests into
+          a single statement
