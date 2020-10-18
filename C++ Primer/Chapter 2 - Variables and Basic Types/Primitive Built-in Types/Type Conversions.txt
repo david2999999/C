@@ -1,0 +1,6 @@
+- The type of an object defines that an object might contain and
+  what operations that object can perform
+    - Among the operations that many types support is the ability
+      to convert objects of the given type to other, related types
+    - Type conversions happen automatically when we use an object of
+      one type where an object of another type is expected
