@@ -15,3 +15,18 @@
     - For example, an 8 bit 'unsigned char' can hold the values from 0 -> 255 inclusive
         - An 8 bit 'signed char' is guaranteed to be able to hold values from -127 through 127
             - Most modern computers use representations that allow values from -128 through 127
+
+- Deciding Which Type to Use
+    - unsigned type, where you know the values cannot be negative
+    - int, integer arithmetic
+    - short, is usually too small and, in practice, long often has the same size as int
+    - long long, data values are larger than the minimum guaranteed size of an int
+    - Do not use plain 'char' or 'bool' in arithmetic expressions
+        - Use them only to hold characters or truth values
+        - Computation using 'char' are especially problematic because 'char' is 'signed' on
+          some machines and 'unsigned' on others
+            - If you need a tiny integer, explicitly specify either signed char or unsigned char
+    - double, floating point computations
+    - float, usually does not have enough precision and the cost between double precision
+      and single precision is negligible
+    - long double, precision is often unnecessary and often entails considerable run-time cost
