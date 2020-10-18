@@ -1,0 +1,8 @@
+- Except for 'bool' and the extended character types
+    - The integral types may be signed or unsigned
+        - A signed type represents negative or positive numbers (including zero)
+        - An unsigned type represents only values greater than or equal to zero
+- The types 'int, short, long, and long long' are all signed
+    - We obtain the corresponding unsigned type by adding 'unsigned' to the type
+        - Such as 'unsigned long'
+        - The type 'unsigned int' may be abbreviated as 'unsigned'
