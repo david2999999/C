@@ -1,0 +1,10 @@
+- C++ defines a set of primitive types that include the arithmetic types
+  and a special type named void
+    - The arithmetic types represent characters, integers, boolean values,
+      and floating point numbers
+    - The void type has no associated value and can be used in only a few
+      circumstances, most commonly as the return type for functions that
+      do not return a value
+
+- The arithmetic types are divided into two categories: integral types (which include
+  character and boolean types) and floating-point types.
