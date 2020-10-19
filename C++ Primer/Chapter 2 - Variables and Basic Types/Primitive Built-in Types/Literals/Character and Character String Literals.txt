@@ -1,0 +1,16 @@
+- Character enclosed within single quotes is a literal of type 'char'
+    - Zero or more characters enclosed in double quotation marks is
+      a string literal
+        - 'a' // character literal
+        - "Hello World!" // string literal
+- The type of a string literal is array of constant chars
+    - The compiler appends a null character ('\0') to every string literal
+        - The literal 'A' represents the single character A
+            - whereas the string literal "A" represents an array of two characters,
+              the letter A and the null character.
+- Two string literals that appear adjacent to one another and that are separated only
+  by spaces, tabs, or newlines are concatenated into a single literal.
+    - We use this form of literal when we need to write a literal that would otherwise
+      be too large to fit comfortably on a single line:
+        - // multiline string literal
+            - std::cout << "a really, really long string literal "
