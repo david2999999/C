@@ -1,0 +1,5 @@
+- Some characters, such as backspace or control characters, have no visible image
+    - Such characters are nonprintable
+    - Our programs cannot use another of these characters directly
+        - Instead we use an escape sequence to represent such characters
+        - An escape sequence begins with a backlash
