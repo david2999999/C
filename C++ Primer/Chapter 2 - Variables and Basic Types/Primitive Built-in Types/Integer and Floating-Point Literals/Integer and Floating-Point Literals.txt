@@ -1,0 +1,18 @@
+- We can write integer literal using decimal, octal, and hexadecimal
+  notation.
+    - Integer literals that begins with 0 (zero) are interpreted as octal
+    - Those that begin with either 0x or 0X are interpreted as hexadecimal
+    - We can write the number 20 in the following way
+        - 20  decimal
+        - 024 octal
+        - 0x14 hexadecimal
+
+- The type of an integer literal depends on its value and notation
+    - By default, decimal literals are signed whereas octal and hexadecimal literals
+      can be either signed or unsigned types
+        - A decimal literal has the smallest type of 'int, long or long long'
+        - Octal literals have the smallest type of 'int, unsigned int, long, unsigned
+          long, long long, or unsigned long long'
+    - It is an error to use a literal that is too larger to fit in the largest
+      related type
+        - There are no literals of type 'short'
