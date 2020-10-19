@@ -1,0 +1,9 @@
+- A simple variable definition consists of a type specifier, followed by a list of one
+  or more variable names separated by commas, and ends with a semicolon
+    - int sum = 0, value, // sum, value, and units_sold have type int
+      units_sold = 0; // sum and units_sold have initial value 0
+    - Sales_item item; // item has type Sales_item
+    - std::string book("0-201-78345-X"); // book initialized from string literal
+        - The definition of book uses the 'std::string' library type
+            - Like iosteam, string is defined in namespace 'std'
+        - The 'string' type is a type that represents a variable-length sequence of characters
