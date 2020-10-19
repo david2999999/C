@@ -1,0 +1,13 @@
+- An object that is initialized gets the specified value at the moment it is created
+    - The values used to initialize a variable can be arbitrarily complicated expressions
+- When a definition defines two or more variables
+    - The name of each object becomes visible immediately
+        - It is possible to initialize a variable to the value of one defined earlier
+          in the same definition
+               // ok: price is defined and initialized before it is used to initialize discount
+              double price = 109.99, discount = price * 0.16;
+              // ok: call applyDiscount and use the return value to initialize salePrice
+              double salePrice = applyDiscount(price, discount);
+- NOTE: initialization and assignment are different operations in C++
+    - Initialization happens when a variable is given a value when it is created
+    - Assignment obliterates an object's current value and replaces that value with a new one
