@@ -1,0 +1,16 @@
+- So long as the pointer has a valid value
+    - We can use a pointer in a condition
+    - Just as when we use an arithmetic value in a condition
+        - If a pointer is 0, then the condition is false
+    - Example:
+        - int ival = 1024;
+        - int *pi = 0; // pi is a valid, null pointer
+        - int *pi2 = &ival; // pi2 is a valid pointer that holds the address of ival
+        - if (pi) // pi has value 0, so condition evaluates as false
+        - if (pi2) // pi2 points to ival, so it is not 0; the condition evaluates as true
+- Given two valid pointers of the same type
+    - We can compare them using the equality (==) or inequality (!=) operators
+        - The result of these operators has type bool
+    - Two pointers are equal if they hold the same address and unequal otherwise
+        - Two pointers hold the same address if they are both null, if they address the
+          same object, or if they are both pointers one past the same object
