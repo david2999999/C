@@ -30,6 +30,15 @@
         - We get the address of an object by using the address-of operator (& operator)
             - int ival = 42;
             - int *p = &ival; // p holds the address of ival; p is a pointer to ival
+    - The type 'void*' is a special pointer type that can hold the address of any object
+        - There are only a limited number of things we can do with this kind of pointer
+            - We can compare it to another point, we can pass it or to return it from a function
+              and we can assign it to another void* pointer
+            - We can not use a void* to operate on the object it addresses
+                - We do not know the object type and the type determines what operations
+                  we can perform on the object
+        - Generally, we use a void* pointer to deal with memory as memory, rather than using
+          the pointer to access the object stored in that memory
 - Pointer Value
     - The value (i.e., the address) stored in a pointer can be in one of four states:
         1. It can point to an object.
