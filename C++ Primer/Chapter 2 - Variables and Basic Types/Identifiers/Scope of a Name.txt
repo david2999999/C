@@ -1,0 +1,9 @@
+- A scope is a part of the program in which a name has a particular meaning
+    - Most scopes in C++ are delimited by curly braces
+- The same name can refer to different entities in different scopes
+    - Names are visible from the point where they are declared until the
+      end of the scope in which the declaration appears
+- The name 'main', are declared outside a function has a global scope
+    - names at the global scope are accessible throughout the program
+    - Methods declared within the scope of a block has block scope
+- Advice: Define Variables Where You First Use Them
