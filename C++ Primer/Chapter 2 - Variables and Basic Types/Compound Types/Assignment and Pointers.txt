@@ -1,0 +1,20 @@
+- Both pointers and references give indirect access to other objects
+    - Reference is not an object
+        - Once we defined a reference
+            - There is no way to make that reference to refer to a different object
+        - When we use a reference
+            - We always get the object to which the reference was initially bound
+    - Pointers are objects
+        - assignments allows pointers to point to a different object
+            - int i = 42;
+            - int *pi = 0; // pi is initialized but addresses no object
+            - int *pi2 = &i; // pi2 initialized to hold the address of i
+            - int *pi3; // if pi3 is defined inside a block, pi3 is uninitialized
+            - pi3 = pi2; // pi3 and pi2 address the same object, e.g., i
+            - pi2 = 0; // pi2 now addresses no object
+        - This can be hard to keep straight whether an assignment changes the pointer or
+          the object to which the pointer points
+            - The important thing to keep in mind is that assignment changes its
+              left-hand operand
+                - pi = &ival; // value in pi is changed; pi now points to ival
+                - *pi = 0; // value in ival is changed; pi is unchanged
