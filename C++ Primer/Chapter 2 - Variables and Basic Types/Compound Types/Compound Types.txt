@@ -1,0 +1,18 @@
+- Compound type is a type that is defined in terms of another type
+    - C++ has several compound types, two of which - references and pointers
+- A reference defines an alternative name for an object
+    - A reference type 'refers to' another type
+        - We define a reference type by writing a declarator of the for '&d', where
+          d is the name being declared
+            - int ival = 1024;
+            - int &refVal = ival; // refVal refers to (is another name for) ival
+            - int &refVal2; // error: a reference must be initialized
+        - ordinarily, when we initialize a variable
+            - The value of the initializer is copied into the object we are creating
+            - When we define a reference, instead of copying the initializer's value
+                - We bind the reference to its initializer
+                    - There is no way to rebind a reference, thus references must be
+                      initialized
+    - A reference is not an object, instead, a reference is just another name for an
+      already existing object
+        - We are not allowed to define a reference to a reference
