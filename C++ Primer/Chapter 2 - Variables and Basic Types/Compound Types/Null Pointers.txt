@@ -1,0 +1,17 @@
+- A null pointer does not point to any object
+    - Code can check whether a pointer is null before attempting to use it
+- There are several ways to obtain a null pointer
+    - int *p1 = nullptr; // equivalent to int *p1 = 0;
+    - int *p2 = 0; // directly initializes p2 from the literal constant 0
+    - int *p3 = NULL; // equivalent to int *p3 = 0;
+        - // must #include cstdlib
+- The most direct approach is to initialize the pointer using the literal 'nullptr'
+    - This has been introduced by the new standard
+- A recommendation is to initialize all variables is particularly important
+  for pointers
+    - If possible, define a pointer only after the object to which it should point
+      has been defined
+        - If there is no object to bind to a pointer, then initialize
+          the pointer to nullptr or zero
+            - This allows the program to detect that the pointer
+              does not point to an object
