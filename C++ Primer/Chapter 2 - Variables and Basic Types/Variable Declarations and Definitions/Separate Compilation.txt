@@ -1,0 +1,16 @@
+- To allow programs to be written in logical parts
+    - C++ supports separate compilation
+    - It lets us split our programs into several files, each of which
+      can be compiled independently
+- When we separate a program into multiple files
+    - We need a way to share code across those files
+        - A concrete example is 'std::cout' and 'std::cin'
+- To support separate compilation
+    - C++ distinguishes between declaration and definition
+        - Declaration makes a name known to the program
+            - A file that wants to use a name elsewhere includes a declaration for that name
+        - A definition creates the associated entity
+- To obtain a declaration that is not also a definition
+    - We add the 'extern' keyword and may not provide an explicit initializer
+        - extern int i; // declares but does not define i
+        - extern double pi = 3.1416; // definition
