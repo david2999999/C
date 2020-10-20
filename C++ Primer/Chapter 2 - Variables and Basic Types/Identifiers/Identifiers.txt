@@ -1,0 +1,6 @@
+- Conventions for Variable Names
+    - An identifier should give some indication of its meaning
+    - Variable names normally are lowercase - index
+    - Like Sales_item, classes we define usually being with an uppercase letter
+    - Identifiers with multiple words should visually distinguish each word
+        - For example, student_loan or studentLoan
