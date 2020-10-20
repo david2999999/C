@@ -1,0 +1,17 @@
+- When we define a variable without an initializer, the variable is default initialized
+    - Such variables are given the default value
+        - The default value depends on the type of the variable and may also depend on
+          where the variable is defined.
+- The value of an object of built-in type that is not explicitly initialized depends on
+  where it is defined
+    - Variables defined outside any function body are initialized to zero
+    - Variables of built-in type defined inside a function are uninitialized
+        - The value of built-in type is undefined
+            - It is an error to copy or otherwise try to access the value of a variable
+              whose value is undefined
+- Each class controls how we initialize objects of that class type
+    - In particular, it is up to the class whether we can define objects of that type without
+      an initializer
+        - if we can, the class determines what value the resulting object will have
+    - Most classes let us define objects without explicit initializers
+        - The library 'string' default value is an empty string
